@@ -12,8 +12,7 @@ class WelcomeController < ApplicationController
   		session[:user_id] = user.id
   		session[:uname] = user.name + " " + user.lastname
   		session[:rol_id] = user.rol_id
-      puts "dentro del if"
-      puts "hola" + user.name + " " + user.lastname
+      puts "Hola" + user.name + " " + user.lastname
 
       #variables de rol
       rol =Rol.find_by(id: user.rol_id)

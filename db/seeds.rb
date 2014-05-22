@@ -9,3 +9,4 @@ Rol.create(rol_name: 'rol_admin', admin: true, module_1: true, module_2: true, m
 
 User.create(username: 'admin', password: 'admins', password_confirmation: 'admins', name: 'Admin', lastname: "Creta", email: 'admin@admin.com', rol_id: 1)
 
+Product.create(title: 'manzana roja', description: 'la manzana es roja', image_url: 'http://cdn.oxwordsblog.wpfuel.co.uk/wpcms/wp-content/uploads/apple-e1382039006457.jpg', unit_price: 5.20)

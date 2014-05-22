@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :offers
+
   get 'gateway/index'
   post 'gateway/index'
 
@@ -23,7 +25,9 @@ Rails.application.routes.draw do
   
   delete 'line_items/' =>'line_items#destroy'
 
-  resources :products
+  resources :products do
+    resources :offers
+  end
 
 
   get 'welcome/index'
